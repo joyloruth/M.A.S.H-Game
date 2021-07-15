@@ -1,10 +1,13 @@
-package com.joyloruth;
+package com.joyloruth.Services;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import com.joyloruth.Models.User;
+import com.joyloruth.Repos.UserRepository;
 
 
 @Service
@@ -23,12 +26,12 @@ public class UserService {
 		repo.save(user);
 	}
 	
-	public User get(long id) {
-		return repo.findById(id).get();
+	public User get(long cityId) {
+		return repo.findById(cityId).get();
 	}
 	
-	public void delete(long id) {
-		repo.deleteById(id);
+	public void delete(long cityId) {
+		repo.deleteById(cityId);
 	}
 	
 	

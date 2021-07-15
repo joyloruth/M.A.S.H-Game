@@ -1,4 +1,4 @@
-package com.joyloruth;
+package com.joyloruth.Models;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

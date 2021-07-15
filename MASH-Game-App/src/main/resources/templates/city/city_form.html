@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>User Registration</title>
+</head>
+<body>
+<div align="center">
+    <h1>City Registration</h1>
+    <form action="#" th:action="@{/cityregister}" method="post" th:object="${city}">
+        <label>City One:</label>
+        <input type="text" th:field="*{cityOne}" /><br/>
+        <label>City Two:</label>
+        <input type="text" th:field="*{cityTwo}" /><br/>
+        <label>City Three:</label>
+        <input type="text" th:field="*{cityThree}" /><br/>
+        <label>City Four:</label>
+        <input type="text" th:field="*{cityFour}" /><br/>
+ 
+     
+ 
+        <button type="submit">Register</button>    
+    </form>
+    
+     <div align="center">
+        <h1>Spring Boot Form Demo</h1>
+        <a href="/register">Click here to register</a>
+    </div>
+</div>
+</body>
+</html>

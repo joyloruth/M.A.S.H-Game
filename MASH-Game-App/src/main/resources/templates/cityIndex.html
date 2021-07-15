@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8"/>
+<title>Results</title>
+</head>
+<body>
+<div align="center">
+    <h1>Cities List</h1>
+    <a href="/addcity">Create New City</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>First City</th>
+                <th>Second City</th>
+                <th>Third City</th>
+                <th>Fourth City</th>
+               
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="city : ${listCitys}">
+            	<td th:text="${city.cityid}">Player ID</td>
+                <td th:text="${city.cityone}">City One</td>
+                <td th:text="${city.citytwo}">City Two</td>
+                <td th:text="${city.citythree}">City Three</td>
+                <td th:text="${city.cityfour}">City Four</td>
+                
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

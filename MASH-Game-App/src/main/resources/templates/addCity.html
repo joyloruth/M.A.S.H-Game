@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Create New Product</title>
+</head>
+<body>
+	<div align="center">
+		<h1>New City</h1>
+		<br />
+		<form action="#" th:action="@{/saveCity}" th:object="${city}"
+			method="post">
+
+			<table border="0" cellpadding="10">
+			<tr>
+					<td>City id:</td>
+					<td><input type="number" th:field="*{cityid}" /></td>
+				</tr>
+				<tr>
+					<td>City 1:</td>
+					<td><input type="text" th:field="*{cityone}" /></td>
+				</tr>
+				<tr>
+					<td>City 2:</td>
+					<td><input type="text" th:field="*{citytwo}" /></td>
+				</tr>
+				<tr>
+					<td>City 3:</td>
+					<td><input type="text" th:field="*{citythree}" /></td>
+				</tr>
+				<tr>
+					<td>City 4:</td>
+					<td><input type="text" th:field="*{cityfour}" /></td>
+				</tr>
+				<tr>
+					
+					<td colspan="2"><button type="submit">Submit</button> </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8" />
+<title>Create New Spouse</title>
+</head>
+<body>
+	<div align="center">
+		<h1>New Spouse</h1>
+		<br />
+		<form action="#" th:action="@{/saveSpouse}" th:object="${spouse}"
+			method="post">
+
+			<table border="0" cellpadding="10">
+			<tr>
+					<td>Spouse Id:</td>
+					<td><input type="number" th:field="*{spouseid}" /></td>
+				</tr>
+				<tr>
+					<td>Spouse 1:</td>
+					<td><input type="text" th:field="*{spouseone}" /></td>
+				</tr>
+				<tr>
+					<td>Spouse 2:</td>
+					<td><input type="text" th:field="*{spousetwo}" /></td>
+				</tr>
+				<tr>
+					<td>Spouse 3:</td>
+					<td><input type="text" th:field="*{spousethree}" /></td>
+				</tr>
+				<tr>
+					<td>Spouse 4:</td>
+					<td><input type="text" th:field="*{spousefour}" /></td>
+				</tr>
+				<tr>
+					
+					<td colspan="2"><button type="submit">Submit</button> </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

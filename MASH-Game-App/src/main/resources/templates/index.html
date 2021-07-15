@@ -1,13 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Spring Boot Form Demo</title>
+<meta charset="utf-8"/>
+<title>Results</title>
 </head>
 <body>
-    <div align="center">
-        <h1>Spring Boot Form Demo</h1>
-        <a href="/register">Click here to register</a>
-    </div>
-</body>
-</html>
+<div align="center">
+    <h1>User List</h1>
+    <a href="new">Create New User</a>
+    <br/><br/>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Password</th>
+               
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr th:each="user : ${listUsers}">
+            	<td th:text="${user.id}">User ID</td>
+                <td th:text="${user.name}">Name</td>
+                <td th:text="${user.email}">Email</td>
+                <td th:text="${user.password}">password</td>
+                
+                
+            </tr>
+        </tbody>
+    </table>
+</div>

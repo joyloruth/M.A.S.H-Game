@@ -40,7 +40,7 @@ public class CityController {
 	public String saveCity(@ModelAttribute("city") City city) {
 		cityService.save(city);
 		
-		return "redirect:/";
+		return "redirect:/spouse";
 	}
 	
 	

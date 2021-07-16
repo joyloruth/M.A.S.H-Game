@@ -1,10 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
+<title>Create New Car</title>
 </head>
 <body>
 
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+   <!--  <img src="/MASH-Game-App/src/main/resources/images/mashlogo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    M*A*S*H* Game
+  </a>
+</nav>
+
+
+<br></br>
+<section id ="banner">
+<div class = "container">
+<div class="row">
+<div class="col-md-4">
+<h1> Car</h1>
+</div>
+
+
+
+
+
+<div class="col-md-8 text-">
+
+	<div align="center">
+		
+		<center><p class="port-title">What Kind of Car will you Drive?</p></center>
+		<br />
+		<div class="container2">
+		<form action="#" th:action="@{/saveCity}" th:object="${car}"
+			method="post">
+
+			<table border="0" cellpadding="10" width= "500">
+			<!--  <tr>
+					<td>City Id:</td>
+					
+					<td><input type="number" th:field="*{carid}" /></td>
+				</tr>-->
+				
+				<tr>
+					<td>CITY 1 :</td>
+					<td width = "75%"><input type="text" th:field="*{carone}" /></td>
+				</tr>
+				<tr>
+					<td >CITY 2 :</td>
+					<td width = "75%"><input type="text" th:field="*{cartwo}" /></td>
+				</tr>
+				<tr>
+					<td>CITY 3 :</td>
+					<td width = "75%"><input type="text" th:field="*{carthree}" /></td>
+				</tr>
+				<tr>
+				
+					<td>CITY 4 :</td>
+					<td width = "75%"><input type="text" th:field="*{carfour}" /></td>
+				</tr>
+				<tr>
+					
+					<td width = "75%" align="right" ><button class="button button1" type="submit">Next: Cities</button> </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	</div>
+	</div></div></div></section>
 </body>
 </html>

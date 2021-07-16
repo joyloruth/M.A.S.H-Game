@@ -1,5 +1,13 @@
 package com.joyloruth.Models;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "car", schema = "mashgame")
 public class Car {
 	
 	private Long carid;
@@ -7,9 +15,25 @@ public class Car {
 	private String cartwo;
 	private String carthree;
 	private String carfour;
+	
+	public Car(){
+		
+	}
+	
+	public Car(Long carid, String carone, String cartwo, String carthree, String carfour) {
+		super();
+		this.carid = carid;
+		this.carone = carone;
+		this.cartwo = cartwo;
+		this.carthree = carthree;
+		this.carfour = carfour;
+	}
+	
 	/**
 	 * @return the carid
 	 */
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	public Long getCarid() {
 		return carid;
 	}
@@ -67,6 +91,12 @@ public class Car {
 	public void setCarfour(String carfour) {
 		this.carfour = carfour;
 	}
-	
 
+	@Override
+	public String toString() {
+		return "Car [carid=" + carid + ", carone=" + carone + ", cartwo=" + cartwo + ", carthree=" + carthree
+				+ ", carfour=" + carfour + "]";
+	}
+	
+	
 }

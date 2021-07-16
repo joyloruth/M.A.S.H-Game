@@ -3,11 +3,71 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
 <title>Create New Spouse</title>
 </head>
 <body>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+   <!--  <img src="/MASH-Game-App/src/main/resources/images/mashlogo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    M*A*S*H* Game
+  </a>
+</nav>
+
+
+<section id ="banner">
+<div class = "container">
+<div class="row">
+<div class="col-md-6">
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<h1>
+  <a href="" class="typewrite" data-period="2000" data-type='[ 
+  "Hi there!.....",
+  "Welcome to my website, my name is Joy LoRuth and I am a self-taught software developer.",
+  "I have experience in Java, C#, SQL, HTML, CSS, Javascript in which I have created web apps.",
+
+  "Below, I have listed some projects that I have completed as well as some that I am currently working on.",
+  
+  "Feel free to have a look around and  if you have any inquires feel free to drop a line at my email address joy@joyloruth.com.",
+
+  "Thank you so much for stopping by!"
+   ]'>
+    <span class="wrap"></span>
+  </a>
+</h1>
+</div>
+ <p class="promo-title"> _SOFTWARE DEVELOPER </p>
+<button onclick="typeWriter()">Click me</button>
+<p> </p>
+<p id="demo"></p> 
+
+<a class="btnOrange btn-primary btn-sm" href="portfolio.html">View Recent Projects</a>
+<a class="btnGreen btn-primary btn-sm" href="https://github.com/joyloruth">View My Github Page</a>
+</div>
+
+
+<div class="col-md-6 text-">
+<br> </br>
+<br> </br>
+<img src = "girl.png" class = "img-fluid">
+
+</div>
+</div>
+</div>
+</container>
+
+
+
 	<div align="center">
-		<h1>New Spouse</h1>
+		<center><p class="port-title">Who will you marry?</p></center>
 		<br />
 		<form action="#" th:action="@{/saveSpouse}" th:object="${spouse}"
 			method="post">

@@ -31,12 +31,12 @@ public class UserController {
 	private UserService service; 
 	
 	
-	@RequestMapping("/")
+	@RequestMapping("/users")
 	public String viewUser(Model model) {
 		List<User> listUsers = service.listAll();
 		model.addAttribute("listUsers", listUsers);
 		
-		return "index";
+		return "userIndex";
 	}
 	
 	@RequestMapping("/adduser")
@@ -51,7 +51,8 @@ public class UserController {
 	public String saveUser(@ModelAttribute("user") User user) {
 		service.save(user);
 		
-		return "redirect:/";
+		//return "redirect:/";
+		return "redirect:/addcity";
 	}
 	
 

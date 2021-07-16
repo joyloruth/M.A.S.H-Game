@@ -3,57 +3,76 @@
 	xmlns:th="http://www.thymeleaf.org">
 <head>
 <meta charset="utf-8" />
-
-<!-- BOOTSTRAP -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="style.css">
+
 <title>Create New City</title>
 </head>
 <body>
+
 <!-- NAVIGATION BAR -->
 <nav class="navbar navbar-light bg-light">
   <a class="navbar-brand" href="#">
-    <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    M.A.S.H. Game
+   <!--  <img src="/MASH-Game-App/src/main/resources/images/mashlogo.png" width="30" height="30" class="d-inline-block align-top" alt=""> -->
+    M*A*S*H* Game
   </a>
 </nav>
+
+
+<br></br>
+<section id ="banner">
+<div class = "container">
+<div class="row">
+<div class="col-md-4">
+<h1> hello</h1>
+</div>
+
+
+
+
+
+<div class="col-md-8 text-">
+
 	<div align="center">
-		<h1>New City</h1>
+		
+		<center><p class="port-title">What city will you live in?</p></center>
 		<br />
+		<div class="container2">
 		<form action="#" th:action="@{/saveCity}" th:object="${city}"
 			method="post">
 
-			<table border="0" cellpadding="10">
-			<tr>
+			<table border="0" cellpadding="10" width= "500">
+			<!--  <tr>
 					<td>City Id:</td>
+					
 					<td><input type="number" th:field="*{cityid}" /></td>
+				</tr>-->
+				
+				<tr>
+					<td>CITY 1 :</td>
+					<td width = "75%"><input type="text" th:field="*{cityone}" /></td>
 				</tr>
 				<tr>
-					<td>City 1:</td>
-					<td><input type="text" th:field="*{cityone}" /></td>
+					<td >CITY 2 :</td>
+					<td width = "75%"><input type="text" th:field="*{citytwo}" /></td>
 				</tr>
 				<tr>
-					<td>City 2:</td>
-					<td><input type="text" th:field="*{citytwo}" /></td>
+					<td>CITY 3 :</td>
+					<td width = "75%"><input type="text" th:field="*{citythree}" /></td>
 				</tr>
 				<tr>
-					<td>City 3:</td>
-					<td><input type="text" th:field="*{citythree}" /></td>
-				</tr>
-				<tr>
-					<td>City 4:</td>
-					<td><input type="text" th:field="*{cityfour}" /></td>
+				
+					<td>CITY 4 :</td>
+					<td width = "75%"><input type="text" th:field="*{cityfour}" /></td>
 				</tr>
 				<tr>
 					
-					<td colspan="2"><button type="submit">Next: Spouses</button> </td>
+					<td width = "75%" align="right" ><button class="button button1" type="submit">Next: Spouses</button> </td>
 				</tr>
 			</table>
 		</form>
 	</div>
-	
-<!-- JSS -->	
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	</div>
+	</div></div></div></section>
 </body>
 </html>

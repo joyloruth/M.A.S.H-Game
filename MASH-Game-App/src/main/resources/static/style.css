@@ -1,0 +1,103 @@
+.navbar
+{ 
+  background-image: linear-gradient(to right,  rgb(128,rgb(255, 128, 64)),#02203c);
+  color:aqua;
+  font-family: monospace;
+  font-size: 7px;
+
+  /*background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));
+  /*background-image: linear-gradient(to right,  #42455a, rgba(5, 3, 3, 0.973)); */
+}
+
+body
+{
+  
+  background-image: linear-gradient(to right,  #7D3C98,#5499C7);
+ 
+}
+
+.port-title
+{
+  font-size: 40px;
+  color: white;
+  margin: auto;
+  font-family: FreeMono, monospace;
+  font-weight: bold;
+  padding-top: 10px;
+  
+}
+
+.btnSource
+{
+  background-color: rgb(255, 166, 0);
+  border: none;
+  color: rgb(141, 61, 23);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 1px 1px;
+  cursor: pointer;
+  box-shadow: 5px 10px;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+input[type=text], select, textarea
+{
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+td {
+  padding: 7px 7px 7px 0;
+  display: inline-block;
+  color: white;
+  font-size: 20px;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  font-family: Arial;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.button {
+  border: none;
+  color: blue;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #5DADE2;
+  color: black;
+  border: 2px solid #85C1E9;
+  border-radius: 30px;
+  box-shadow: 5px 5px 3px grey;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: rgba(47, 42, 48, 0.404);
+  padding: 20px;
+  box-shadow: 7px 7px 5px grey;
+}

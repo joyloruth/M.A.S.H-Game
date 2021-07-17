@@ -17,29 +17,36 @@
 </nav>
 
 <div align="center">
-    <h1>User List</h1>
-    <a href="adduser">Create New User</a>
-    <br/><br/>
-    <table border="1" cellpadding="10">
-        <thead>
-            <tr>
-                <th>User ID</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Password</th>
-               
-                
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="user : ${listUsers}">
-            	<td th:text="${user.id}">User ID</td>
+    <h2>Customer Manager</h2>
+    <form method="get" action="search">
+        <input type="text" name="keyword" /> &nbsp;
+        <input type="submit" value="Search" />
+    </form>
+    <h3><a href="/new">New Customer</a></h3>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>E-mail</th>
+            <th>Address</th>
+            <th>Action</th>
+        </tr>
+       <tr th:each="user : ${listUsers}">
+                <td th:text="${user.id}">User ID</td>
                 <td th:text="${user.name}">Name</td>
                 <td th:text="${user.email}">Email</td>
                 <td th:text="${user.password}">password</td>
-                
-                
-            </tr>
-        </tbody>
+            
+                <td>
+                <a href="/edit?id=${user.id}">Edit</a>
+                &nbsp;&nbsp;&nbsp;
+                <a href="/delete?id=${user.id}">Delete</a>
+           		</td>
+            
+        </tr>
+        </c:forEach>
     </table>
-</div>
+</div>   
+
+</body>
+</html>

@@ -1,9 +1,10 @@
 .navbar
 { 
-  background-image: linear-gradient(to right,  rgb(128,rgb(255, 128, 64)),#02203c);
-  color:aqua;
+  
+  background-image: linear-gradient(to right,  #7D3C98,#5499C7);
   font-family: monospace;
   font-size: 7px;
+  box-shadow: 3px 3px 5px black;
 
   /*background-image: linear-gradient(to right, rgb(67, 187, 235), rgba(147, 233, 48, 0.973));
   /*background-image: linear-gradient(to right,  #42455a, rgba(5, 3, 3, 0.973)); */
@@ -88,16 +89,16 @@ input[type=submit] {
 }
 
 .button1 {
-  background-color: #5DADE2;
+   background-image: linear-gradient(to right,  #7D3C98,#5499C7);
   color: black;
-  border: 2px solid #85C1E9;
-  border-radius: 30px;
-  box-shadow: 5px 5px 3px grey;
+  border: 2px solid ;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px black;
 }
 
 .container2 {
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: rgba(47, 42, 48, 0.404);
   padding: 20px;
-  box-shadow: 7px 7px 5px grey;
+  box-shadow: 7px 7px 10px black;
 }

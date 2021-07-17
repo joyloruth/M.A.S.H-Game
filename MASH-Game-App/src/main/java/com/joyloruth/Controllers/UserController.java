@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
+import org.springframework.web.bind.annotation.RequestParam;
 
 import com.joyloruth.Models.User;
 import com.joyloruth.Services.UserService;
@@ -53,6 +53,12 @@ public class UserController {
 		
 		//return "redirect:/";
 		return "redirect:/addcity";
+	}
+	
+	@RequestMapping("/delete")
+	public String deleteCustomerForm(@RequestParam long id) {
+	   service.delete(id);
+	   return "redirect:/users";       
 	}
 	
 

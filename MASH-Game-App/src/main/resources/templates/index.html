@@ -8,18 +8,24 @@
 </head>
 <body>
 
-<!-- Image and text -->
-<nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="#">
-    <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-    MASH GAME
-  </a>
-</nav>
+<div align="center">
+    <h1>User List</h1>
+    
+    
+    <br/><br/>
+    <table border="1" cellpadding="10">
+     
+        <tbody>
+            <tr th:each="user : ${listUsers}">
+                <td th:text="${user.id}">User ID</td>
+                <td th:text="${user.name}">Name</td>
+                <td th:text="${user.email}">Email</td>
+                <td th:text="${user.password}">password</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
 
-<container>
-
-<img src = "mashlogo.png" class = "img-fluid">
- <a class="btnSource  btn-sm" href="/adduser"> Start Game</a>
 </container>
  
  

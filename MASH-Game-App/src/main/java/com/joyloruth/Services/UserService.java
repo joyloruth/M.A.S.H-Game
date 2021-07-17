@@ -26,12 +26,12 @@ public class UserService {
 		repo.save(user);
 	}
 	
-	public User get(long cityId) {
-		return repo.findById(cityId).get();
+	public User get(long id) {
+		return repo.findById(id).get();
 	}
 	
-	public void delete(long cityId) {
-		repo.deleteById(cityId);
+	public void delete(long id) {
+		repo.deleteById(id);
 	}
 	
 	

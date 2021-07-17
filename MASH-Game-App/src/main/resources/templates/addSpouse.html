@@ -19,83 +19,49 @@
 </nav>
 
 
+<br></br>
 <section id ="banner">
 <div class = "container">
 <div class="row">
-<div class="col-md-6">
-
-<br></br>
-<br></br>
-<br></br>
-<br></br>
-<h1>
-  <a href="" class="typewrite" data-period="2000" data-type='[ 
-  "Hi there!.....",
-  "Welcome to my website, my name is Joy LoRuth and I am a self-taught software developer.",
-  "I have experience in Java, C#, SQL, HTML, CSS, Javascript in which I have created web apps.",
-
-  "Below, I have listed some projects that I have completed as well as some that I am currently working on.",
-  
-  "Feel free to have a look around and  if you have any inquires feel free to drop a line at my email address joy@joyloruth.com.",
-
-  "Thank you so much for stopping by!"
-   ]'>
-    <span class="wrap"></span>
-  </a>
-</h1>
-</div>
- <p class="promo-title"> _SOFTWARE DEVELOPER </p>
-<button onclick="typeWriter()">Click me</button>
-<p> </p>
-<p id="demo"></p> 
-
-<a class="btnOrange btn-primary btn-sm" href="portfolio.html">View Recent Projects</a>
-<a class="btnGreen btn-primary btn-sm" href="https://github.com/joyloruth">View My Github Page</a>
+<div class="col-md-4">
+<h1> Car</h1>
 </div>
 
 
-<div class="col-md-6 text-">
-<br> </br>
-<br> </br>
-<img src = "girl.png" class = "img-fluid">
 
-</div>
-</div>
-</div>
-</container>
 
+
+<div class="col-md-8 text-">
 
 
 	<div align="center">
 		<center><p class="port-title">Who will you marry?</p></center>
 		<br />
+		<div class="container2">
 		<form action="#" th:action="@{/saveSpouse}" th:object="${spouse}"
 			method="post">
 
-			<table border="0" cellpadding="10">
-			<tr>
-					<td>Spouse Id:</td>
-					<td><input type="number" th:field="*{spouseid}" /></td>
+			<table border="0" cellpadding="10" width= "500">
+			
+				<tr>
+					<td>SPOUSE 1:</td>
+					<td width = "75%"><input type="text" th:field="*{spouseone}" /></td>
 				</tr>
 				<tr>
-					<td>Spouse 1:</td>
-					<td><input type="text" th:field="*{spouseone}" /></td>
+					<td>SPOUSE 2:</td>
+					<td width = "75%"><input type="text" th:field="*{spousetwo}" /></td>
 				</tr>
 				<tr>
-					<td>Spouse 2:</td>
-					<td><input type="text" th:field="*{spousetwo}" /></td>
+					<td>SPOUSE 3:</td>
+					<td width = "75%"><input type="text" th:field="*{spousethree}" /></td>
 				</tr>
 				<tr>
-					<td>Spouse 3:</td>
-					<td><input type="text" th:field="*{spousethree}" /></td>
-				</tr>
-				<tr>
-					<td>Spouse 4:</td>
-					<td><input type="text" th:field="*{spousefour}" /></td>
+					<td>SPOUSE 4:</td>
+					<td width = "75%"><input type="text" th:field="*{spousefour}" /></td>
 				</tr>
 				<tr>
 					
-					<td colspan="2"><button type="submit">Submit</button> </td>
+					<td width = "75%" align="right" ><button class="button button1" type="submit">Next: Children</button> </td>
 				</tr>
 			</table>
 		</form>

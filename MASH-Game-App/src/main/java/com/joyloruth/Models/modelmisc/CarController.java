@@ -1,4 +1,4 @@
-package com.joyloruth.Controllers;
+package com.joyloruth.Models.modelmisc;
 
 import java.util.List;
 
@@ -8,9 +8,6 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-
-import com.joyloruth.Models.Car;
-import com.joyloruth.Services.CarService;
 
 @Controller
 public class CarController {
@@ -38,7 +35,7 @@ public class CarController {
 	public String saveCar(@ModelAttribute("car") Car car) {
 		carService.save(car);
 		
-		return "redirect:/addcar";
+		return "redirect:/";
 	}
 	
 

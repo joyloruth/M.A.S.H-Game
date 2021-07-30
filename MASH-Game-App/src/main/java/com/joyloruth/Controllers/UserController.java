@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -55,16 +56,22 @@ public class UserController {
 		return "redirect:/addcity";
 	}
 	
-	@RequestMapping("/delete")
-	public String deleteCustomerForm(@RequestParam long id) {
-	   service.delete(id);
-	   return "redirect:/users";       
+	
+	
+	@RequestMapping("/results")
+	public String viewResults(Model model) {
+		List<User> listUsers = service.listAll();
+		model.addAttribute("listUsers", listUsers);
+		
+		return "resultsIndex";
 	}
 	
-
 	
-	
-	
+	@RequestMapping("/delete/{id}")
+	public String deleteProduct(@PathVariable(name = "id") int id) {
+	    service.delete(id);
+	    return "redirect:/";       
+	}
 	
 	
 	
